@@ -1,0 +1,4 @@
+vhdl isim_temp "AD7866_model_single.vhd"
+vhdl isim_temp "AD7866_Model.vhd"
+vhdl isim_temp "ad7866_driver.vhd"
+vhdl isim_temp "tb2.vhd"

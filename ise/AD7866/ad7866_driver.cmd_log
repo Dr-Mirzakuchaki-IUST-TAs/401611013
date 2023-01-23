@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/ad7866_driver.xst" -ofn "D:/Xilinx/project/AD7866/ad7866_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/ad7866_driver.xst" -ofn "D:/Xilinx/project/AD7866/ad7866_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/ad7866_driver.xst" -ofn "D:/Xilinx/project/AD7866/ad7866_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/ad7866_driver.xst" -ofn "D:/Xilinx/project/AD7866/ad7866_driver.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/ad7866_driver.xst" -ofn "D:/Xilinx/project/AD7866/ad7866_driver.syr" 

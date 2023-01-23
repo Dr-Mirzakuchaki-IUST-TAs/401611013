@@ -1,0 +1,420 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: AD7866_model_single.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "AD7866_model_single.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "AD7866_model_single"
+Output Format                      : NGC
+Target Device                      : xc7z010-3-clg400
+
+---- Source Options
+Top Module Name                    : AD7866_model_single
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" into library work
+Parsing entity <AD7866_model_single>.
+Parsing architecture <Behavioral> of entity <ad7866_model_single>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <AD7866_model_single> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 35: currentstate should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 40: i_range should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 42: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 43: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 45: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 47: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 49: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 52: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 54: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 56: m_current_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 58: m_current_config should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 60. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 65: fall_edge_number should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 66: m_dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 68: fall_edge_number should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 69: i_dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 71: m_next_config should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 72: fall_edge_number should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\Xilinx\project\AD7866\AD7866_model_single.vhd" Line 73: i_range should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <AD7866_model_single>.
+    Related source file is "D:\Xilinx\project\AD7866\AD7866_model_single.vhd".
+        adc_vref_mv = 3000
+        adc_channel1_mv = 1500
+        adc_channel2_mv = 300
+        channel_bit = '0'
+WARNING:Xst:647 - Input <i_Dout<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <i_sclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit adder for signal <fall_edge_number[4]_GND_4_o_add_6_OUT> created at line 65.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_8_OUT<3:0>> created at line 66.
+    Found 1-bit 16-to-1 multiplexer for signal <GND_4_o_m_Dout[15]_Mux_8_o> created at line 66.
+WARNING:Xst:737 - Found 1-bit latch for signal <CurrentState<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout_Serial>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fall_edge_number<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fall_edge_number<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fall_edge_number<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fall_edge_number<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <fall_edge_number<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_next_config<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_next_config<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_next_config<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_Dout<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_current_config<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_current_config<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <m_current_config<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <o_Dout_Serial> created at line 83
+WARNING:Xst:737 - Found 1-bit latch for signal <CurrentState<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  29 Latch(s).
+	inferred  24 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <AD7866_model_single> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+# Latches                                              : 29
+ 1-bit latch                                           : 29
+# Multiplexers                                         : 24
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 23
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <CurrentState_0> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CurrentState_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_Dout_Serial> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_0> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_14> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_15> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_1> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_2> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_3> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_4> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_5> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_7> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_8> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_6> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_9> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_10> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_11> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_12> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_13> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_next_config_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_2> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_4> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_3> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_current_config_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_next_config_2> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_current_config_2> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_next_config_0> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_current_config_0> is unconnected in block <AD7866_model_single>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+# Multiplexers                                         : 24
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 23
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <CurrentState_0> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CurrentState_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_Dout_Serial> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_0> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_14> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_15> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_1> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_2> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_3> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_4> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_5> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_7> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_8> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_6> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_9> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_10> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_11> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_12> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_Dout_13> (without init value) has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_next_config_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_2> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_4> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fall_edge_number_3> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <m_current_config_1> has a constant value of 0 in block <AD7866_model_single>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_next_config_2> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_current_config_2> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_next_config_0> is unconnected in block <AD7866_model_single>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <m_current_config_0> is unconnected in block <AD7866_model_single>.
+
+Optimizing unit <AD7866_model_single> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block AD7866_model_single, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : AD7866_model_single.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 18
+#      IBUF                        : 1
+#      OBUF                        : 16
+#      OBUFT                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  18  out of    100    18%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.279ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.279ns (Levels of Logic = 2)
+  Source:            i_cs (PAD)
+  Destination:       o_Dout_Serial (PAD)
+
+  Data Path: i_cs to o_Dout_Serial
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.279  i_cs_IBUF (i_cs_IBUF)
+     OBUFT:T->O                0.000          o_Dout_Serial_OBUFT (o_Dout_Serial)
+    ----------------------------------------
+    Total                      0.279ns (0.000ns logic, 0.279ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.76 secs
+ 
+--> 
+
+Total memory usage is 4617480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  107 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

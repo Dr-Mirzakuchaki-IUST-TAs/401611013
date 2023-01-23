@@ -1,0 +1,4 @@
+vhdl work "AD7866_model_single.vhd"
+vhdl work "AD7866_Model.vhd"
+vhdl work "ad7866_driver.vhd"
+vhdl work "tb2.vhd"

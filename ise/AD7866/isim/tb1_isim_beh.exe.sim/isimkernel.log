@@ -1,0 +1,10 @@
+Command line:
+   tb1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  8628
+
+Mon Jan 23 19:33:16 2023
+
+
+ Elaboration Time: 0.71875 sec
