@@ -1,0 +1,25 @@
+Running: d:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Xilinx/project/AD7866/tb2_isim_beh.exe -prj D:/Xilinx/project/AD7866/tb2_beh.prj work.tb2 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Xilinx/project/AD7866/AD7866_model_single.vhd" into library work
+Parsing VHDL file "D:/Xilinx/project/AD7866/AD7866_Model.vhd" into library work
+Parsing VHDL file "D:/Xilinx/project/AD7866/ad7866_driver.vhd" into library work
+Parsing VHDL file "D:/Xilinx/project/AD7866/tb2.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity ad7866_driver [ad7866_driver_default]
+Compiling architecture behavioral of entity AD7866_model_single [\AD7866_model_single(4095,2000,1...]
+Compiling architecture behavioral of entity AD7866_model_single [\AD7866_model_single(4095,3000,4...]
+Compiling architecture behavioral of entity AD7866_model [ad7866_model_default]
+Compiling architecture behavior of entity tb2
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable D:/Xilinx/project/AD7866/tb2_isim_beh.exe
+Fuse Memory Usage: 35820 KB
+Fuse CPU Usage: 671 ms

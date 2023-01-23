@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/spi_slave.xst" -ofn "D:/Xilinx/project/AD7866/spi_slave.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/project/AD7866/spi_slave.xst" -ofn "D:/Xilinx/project/AD7866/spi_slave.syr" 
